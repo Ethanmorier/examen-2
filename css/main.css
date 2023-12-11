@@ -1,25 +1,3 @@
-/* ====================================
-// css variables
-// ==================================== */
-
-:root {
-}
-
-/* ====================================
-// reset rules
-// ==================================== */
-
-/* ====================================
-// css variables
-// ==================================== */
-
-:root {
-}
-
-/* ====================================
-// reset rules
-// ==================================== */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,9 +12,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
-  font-size: 1rem;
-  line-height: 1.25;
 }
 
 a {
@@ -49,23 +24,301 @@ video {
   block-size: auto;
   vertical-align: middle;
 }
-.row + .row {
-  margin-top: 16px;
-}
 
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
 hr {
   margin: 20px;
 }
+
 p {
-  margin: 15px;
+  margin-bottom: 15px;
+  font-family: "Josefin Sans";
 }
-.col-6 {
+
+.logo {
+  position: relative;
+}
+
+.logo-background {
+  background-image: url("../Img/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(70%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* Navigation */
+.nav {
+  background: #f4ece1;
+  height: 89px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+}
+
+.nav a {
+  font-family: "Josefin Sans";
+  font-size: 25px;
+  text-decoration: dashed;
+}
+
+header .btn-reserver {
+  padding: 10px 15px;
+  border: #000 2px solid;
+  border-radius: 10px;
+}
+
+a:hover {
+  border-color: #e8102d;
+  color: #e8102d;
+}
+
+header {
+  background-image: url("../Img/background.png");
+}
+
+.filter-brightness {
+  backdrop-filter: brightness(60%);
+  position: relative;
+}
+.filter-brightness .leaf {
+  position: absolute;
+  top: -230px;
+  left: 0px;
+}
+
+/* Headings */
+h2 {
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 100px 0;
+}
+
+h3 {
+  color: #00000058;
+  font-family: "Josefin Sans";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bckg-cest-quoi {
+  background-color: #f4ece1;
+}
+
+.cest-quoi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.cest-quoi p {
+  color: #000;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bckg-la-carte {
+  background-color: #e8d7bf;
+  padding-bottom: 122px;
+  position: relative;
+}
+.bckg-la-carte .spiral {
+  position: absolute;
+  top: -200px;
+}
+.Pantone {
+  margin-bottom: 80px;
+  border-radius: 30px;
+  border: 0px solid #000;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pantone p {
+  color: #000;
+  font-family: Josefin Sans;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.Pantone100 {
+  background: #f4ed7c;
+}
+.Pantone151 {
+  background: #f67e00;
+}
+.Pantone168 {
+  background: #6c2f11;
+}
+.Pantone185 {
+  background: #e8102d;
+}
+.Pantone232 {
+  background: #f43fa5;
+}
+.Pantone266 {
+  background: #6d27aa;
+}
+.Pantone286 {
+  background: #0038a8;
+}
+.Pantone320 {
+  background: #009ea0;
+}
+.Pantone330 {
+  background: #005951;
+}
+.Pantone392 {
+  background: #b59b0d;
+}
+.Pantone472 {
+  background: #e9aa79;
+}
+.Pantone111 {
+  background: #01b5d6;
+}
+
+.texte-carte {
+  color: #000;
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn-more {
+  height: 80px;
+  border-radius: 15px;
+  background: #f4ece1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Josefin Sans;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.btn-more p {
+  margin: 0;
+}
+
+.btn-dark {
+  background: #e8d7bf;
+}
+
+.bckg-prochain-evenement {
+  background-color: #f4ece1;
+  position: relative;
+}
+.bckg-prochain-evenement .star {
+  position: absolute;
+  top: -200px;
+  right: 0px;
+}
+
+.card-evenement {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-evenement p {
+  height: 200px;
+  padding: 30px 10px;
+  border-radius: 0 0 70px 70px;
+  background-color: #e8d7bf;
+  color: #000;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer {
+  color: #fff;
+  background: url(../Img/background.png);
+}
+
+.footer-padding {
+  padding: 20px;
+}
+
+footer h2 {
+  color: #fff;
+  box-sizing: border-box;
+}
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container-footer-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+footer img {
+  margin: auto;
+}
+
+footer .copyright {
+  margin: 40px 0 0 0;
+  text-align: center;
+  font-size: 30px;
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+.burger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.menu {
+}
+
+.is-active {
+  background: blue;
 }
